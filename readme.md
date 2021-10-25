@@ -17,7 +17,7 @@
 - table_name to nazwa tabeli, do której odnosi się klauzula / polecenie.
 - ( ): Jest parametrem, który może być listą kolumn, typów danych lub wartości.
 
-# Tworzenie
+# Create
 
 Instrukcje Create pozwalają na utworzenie nowej tabeli w bazie danych.
 
@@ -27,20 +27,20 @@ name TEXT,
 age INTEGER
 );'
 
-### Wstawianie
+### Insert
 
 Instrukcje Insert wstawia nowy wiersz do tabeli.
 'INSERT INTO family
 (id, name, age)
 VALUES (1, 'Dariusz Nowak', 26);'
 
-### Zaznaczanie
+### Select
 
 Instrukcje Select służą do pobierania danych z bazy danych. \* to specjalny znak wieloznaczny, który pozwala wybrać każdą kolumnę bez nazywania ich wszystkich.
 'SELECT \* FROM family;'
 'SELECT name FROM family;'
 
-### Edycja
+### Alter
 
 Instrukcja alter table dodaje nową kolumnę do tabeli.
 NULL to specjalna wartość w SQL, która reprezentuje brakujące lub nieznane dane.
@@ -48,7 +48,7 @@ NULL to specjalna wartość w SQL, która reprezentuje brakujące lub nieznane d
 'ALTER TABLE family
 ADD COLUMN twitter_handle TEXT;'
 
-### Aktualizacja
+### Update
 
 Instrukcja aktualizacji edytuje wiersz w tabeli.
 
@@ -56,7 +56,7 @@ Instrukcja aktualizacji edytuje wiersz w tabeli.
 SET twitter_handle = '@andrzej13'
 WHERE id = 4;'
 
-### Usuwanie
+### Delete
 
 Instrukcja delete from usuwa jeden lub więcej wierszy z tabeli.
 
